@@ -2,6 +2,8 @@
 
 A command-line tool for migrating docker images from source repository to target repository
 
+To download the binary, see the [release page](https://github.com/bzon/migrate-docker-repos/releases/).
+
 ### Usage
 
 Create the program `config.yaml` file.
@@ -23,5 +25,9 @@ Run the program.
 # For example:
 docker login -u _json_key -p "$GCLOUD_SERVICE_KEY" eu.gcr.io
 
+# Run the program using Go
 go run main.go
+
+# Run the program using the downloaded binary
+./migrate-docker-repos
 ```
